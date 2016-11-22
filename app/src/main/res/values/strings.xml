@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Shopping</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="mainpage">首页</string>
+    <string name="shopingcart">购物车</string>
+    <string name="personcenter">我的爱购</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_modify_person_info">ModifyPersonInfoActivity</string>
+    <string name="title_activity_edit_info">EditInfoActivity</string>
+</resources>

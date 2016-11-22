@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#f00</color>
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimaryDark">#f00</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="common_bg">#fcfcfc</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+    <!-- #ccc -->
+    <color name="border_clo">#ccc</color>
+    <color name="red">#f00</color>
+    <color name="text_clo">#5E5E5E</color>
+    <color name="black">#000</color>
+</resources>

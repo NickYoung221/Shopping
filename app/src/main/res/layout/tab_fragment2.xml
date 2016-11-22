@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_linearly"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+
+    <TextView 
+        android:id="@+id/order_fragment_tab1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="全部"
+        android:textSize="14sp"
+        android:textColor="#5E5E5E"
+        android:gravity="center"/>
+    <TextView 
+        android:id="@+id/order_fragment_tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="待付款"
+        android:textSize="14sp"
+         android:textColor="#5E5E5E"
+        android:gravity="center"/>
+   
+     <TextView 
+        android:id="@+id/order_fragment_tab3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="待发货"
+         android:textColor="#5E5E5E"
+        android:textSize="14sp"
+        android:gravity="center"/>
+      <TextView 
+        android:id="@+id/order_fragment_tab4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="待收货"
+        android:textSize="14sp"
+         android:textColor="#5E5E5E"
+        android:gravity="center"/>
+       <!--<TextView -->
+        <!--android:id="@+id/order_fragment_tab5"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="待验证"-->
+        <!--android:textSize="14sp"-->
+         <!--android:textColor="#5E5E5E"-->
+        <!--android:gravity="center"/>-->
+        <TextView 
+        android:id="@+id/order_fragment_tab6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="待评价"
+         android:textColor="#5E5E5E"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+</LinearLayout>

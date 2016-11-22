@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#ffffff"
+    android:focusable="false">
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/order_item_iv_left"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher"/>
+
+    <RelativeLayout 
+        android:id="@+id/order_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignBaseline="@id/order_item_iv_left"
+        android:layout_toRightOf="@id/order_item_iv_left">
+
+        <TextView 
+            android:id="@+id/order_item_info_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingTop="3dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="￥88.00"
+            android:layout_marginRight="20dp"
+            android:gravity="left"/>
+
+        <TextView 
+            android:id="@+id/order_item_info_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/order_item_info_price"
+            android:textSize="14sp"
+            
+            android:singleLine="false"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:textColor="@android:color/black"
+            android:text="商品名称"
+            android:ellipsize="end"
+            android:layout_marginRight="10dp"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/order_item_info_buynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/order_item_info_price"
+
+            android:layout_below="@id/order_item_info_price"
+            android:paddingTop="8dp"
+            android:textColor="@color/border_clo"
+            android:text="x4"
+            android:textSize="13sp" />
+
+        
+    </RelativeLayout>
+    <ImageView 
+        android:visibility="gone"
+        android:id="@+id/order_item_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"/>
+    </RelativeLayout>
+   
+</RelativeLayout>

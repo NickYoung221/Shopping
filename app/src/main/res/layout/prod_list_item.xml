@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#ffffff"
+    android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <ImageView
+            android:id="@+id/prod_list_item_iv"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:background="@drawable/img_border"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/prod_list_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/prod_list_item_iv"
+            android:layout_toEndOf="@id/prod_list_item_iv"
+            android:paddingLeft="7dp"
+            >
+            <TextView
+                android:id="@+id/prod_list_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minLines="1"
+                android:maxLines="2"
+                android:textSize="14sp"
+                android:textColor="#444"
+                android:text="商品信息"
+
+                />
+            <TextView
+                android:id="@+id/prod_list_item_tv2"
+                android:layout_below="@id/prod_list_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_red_light"
+                android:text="￥71.00"
+
+                />
+            <TextView
+                android:id="@+id/prod_list_item_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/border_clo"
+                android:layout_below="@+id/prod_list_item_tv2"
+                android:text="361 条评价"
+
+
+                />
+            <TextView
+                android:id="@+id/prod_list_item_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/border_clo"
+                android:layout_alignBottom="@id/prod_list_item_tv3"
+                android:layout_alignParentRight="true"
+                android:text="已售3671件"
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View style="@style/bg_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

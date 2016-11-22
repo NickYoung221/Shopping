@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:shoping="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <!-- <com.example.dliu.shoppingdemo.widget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          shoping:titleBarTitle="我的爱购"
+          shoping:titleBarColor="@color/black"
+        >
+        </com.example.dliu.shoppingdemo.widget.TitleBar>-->
+ <!-- 上面是相对布局 -->
+          <RelativeLayout 
+                android:id="@+id/person_center_ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/navigator_bar"
+                android:scaleType="centerCrop"
+                >
+               <!-- 头像 -->
+                <ImageView 
+                    android:id="@+id/person_center_header_iv"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_launcher"/>
+                <TextView 
+                    android:id="@+id/person_center_header_pnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/person_center_header_iv"
+                    android:layout_toRightOf="@id/person_center_header_iv"
+                    android:layout_marginBottom="8dp"
+					android:layout_marginLeft="8dp"
+                    android:text="点此登陆"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"/>
+             
+                </RelativeLayout>
+                <!-- 中间的分割线 -->
+             <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="15px"
+                 android:background="#C0C5C7"/>
+             
+             <!-- 个人资料：每一行的布局 -->
+              <RelativeLayout 
+                 android:id="@+id/person_center_content_personinfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:background="#ffffff"
+                 android:layout_marginBottom="10dp"
+                 >
+				
+				 <TextView 
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_centerVertical="true"
+				     android:text="个人资料"
+				     android:textSize="15sp"
+				     android:textColor="@color/text_clo"/>
+				 <ImageView 
+				     android:id="@+id/iv_edit_person_info"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignParentRight="true"
+				     android:layout_centerVertical="true"
+				     android:padding="6dp"
+				     android:src="@drawable/iv_editinfo"
+				     />
+				<!--  <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="1px"
+                 android:background="#C0C5C7"/>
+                  -->
+			</RelativeLayout>
+             
+                <!-- 中间的分割线 -->
+             <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="3px"
+                 android:background="#C0C5C7"/>
+             
+              <!-- 我的收藏：每一行的布局 -->
+              <RelativeLayout 
+                 android:id="@+id/person_center_content_mycollect"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:background="#ffffff"
+                 android:layout_marginBottom="10dp"
+                 >
+				
+				 <TextView 
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_centerVertical="true"
+				     android:text="我的收藏"
+				     android:textSize="15sp"
+				     android:textColor="@color/text_clo"/>
+				 <ImageView 
+				      android:id="@+id/iv_show_mycollect"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignParentRight="true"
+				     android:layout_centerVertical="true"
+				     android:padding="6dp"
+				     android:src="@drawable/iv_editinfo"/>
+				<!--  <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="1px"
+                 android:background="#C0C5C7"/>
+                  -->
+			</RelativeLayout>
+             
+                 <!-- 中间的分割线 -->
+             <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="1px"
+                 android:background="#C0C5C7"/>
+             
+              <!-- 查看我的订单：每一行的布局 -->
+              <RelativeLayout 
+                 android:id="@+id/person_center_content_myorder"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:background="#ffffff"
+                 android:layout_marginBottom="10dp"
+                 >
+				
+				 <TextView 
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_centerVertical="true"
+				     android:text="查看我的订单"
+				     android:textSize="15sp"
+				     android:textColor="@color/text_clo"/>
+				 <ImageView 
+				      android:id="@+id/iv_show_myorder"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignParentRight="true"
+				     android:layout_centerVertical="true"
+				     android:padding="6dp"
+				     android:src="@drawable/iv_editinfo"/>
+				<!--  <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="1px"
+                 android:background="#C0C5C7"/>
+                  -->
+			</RelativeLayout>
+              
+            <!-- 中间的分割线 -->
+             <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="1px"
+                 android:background="#C0C5C7"/>
+             
+              <!-- 查看我的收获地址：每一行的布局 -->
+              <RelativeLayout 
+                 android:id="@+id/person_center_content_myaddress"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:background="#ffffff"
+                 android:layout_marginBottom="10dp"
+                 >
+				
+				 <TextView 
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_centerVertical="true"
+				     android:text="查看我的收获地址"
+				     android:textSize="15sp"
+				     android:textColor="@color/text_clo"/>
+				 <ImageView 
+				      android:id="@+id/iv_show_myaddress"
+				     android:layout_width="wrap_content"
+				     android:layout_height="wrap_content"
+				     android:layout_alignParentRight="true"
+				     android:layout_centerVertical="true"
+				     android:padding="6dp"
+				     android:src="@drawable/iv_editinfo"/>
+				<!--  <View android:layout_width="match_parent"
+				     android:layout_alignParentBottom="true"
+                 android:layout_height="1px"
+                 android:background="#C0C5C7"/>
+                  -->
+			</RelativeLayout>
+</LinearLayout>
